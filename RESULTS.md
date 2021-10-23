@@ -1,14 +1,14 @@
 Product Test result Summary
 ---
 
-Product test results from be2fc0baeda69cad7480e29aa6714b2e5d916c8e tested on 2021-09-30
+Product test results from f0e86e9a9c8aae958bf5dbc49012d8f630a2014 tested on 2021-10-22
 
 | Product                           | Passing | Failing | Skipped | Unfinished | Total |
 |-----------------------------------|---------|---------|---------|------------|-------|
 | rocky-boot-iso-x86_64-*           | 0       | 2       | 0       | 0          | 2     |
 | rocky-minimal-iso-x86_64-*        | 2       | 0       | 0       | 0          | 2     |
-| rocky-dvd-iso-x86_64-*            | 5       | 8       | 14      | 0          | 27    |
-| rocky-universal-x86_64-*          | 23      | 22      | 0       | 2*         | 47    |
+| rocky-dvd-iso-x86_64-*            | 25      | 1       | 0       | 0          | 26    |
+| rocky-universal-x86_64-*          | 23      | 18      | 0       | 2*         | 47    |
 
 \* install_pxeboot and install_pxeboot@uefi can't run due to misssing `support_server@64bit`
 
@@ -58,5 +58,3 @@ sudo openqa-cli api -X POST isos \
   ARCH=x86_64 \
   BUILD="-universal-$(date +%Y%m%d.%H%M%S).0"
 ```
-
-
